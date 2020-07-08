@@ -1,0 +1,310 @@
+
+#nart-1 {
+	background-image: url("../img/articles/nart1.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#nart-2 {
+	background-image: url("../img/articles/nart2.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#nart-3 {
+	background-image: url("../img/articles/nart3.png"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#nart-4 {
+	background-image: url("../img/articles/nart4.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#part-1 {
+	background-image: url("../img/articles/part1.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#part-2 {
+	background-image: url("../img/articles/part2.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#part-3 {
+	background-image: url("../img/articles/part3.jpg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+#part-4 {
+	background-image: url("../img/articles/part4.jpeg"); /*background imgtoekent per artikel is dit anders daarom id gebruikt.*/
+}
+
+.art-box { /*artikelbox toont de artikelen en*/
+	width: 475px;
+	height: 185px;
+	float:left;
+	background-size: 100%;
+	background-position: center;
+	transition: .25s;
+	color: white;
+	position: relative;
+}
+
+.art-box-r {
+	text-align: right;
+}
+
+.art-box:hover, .even-box:hover {
+	background-size: 120%;
+}
+
+.art-box:hover:after, .even-box:hover:after {
+	cursor: pointer;
+	opacity: .35;
+}
+
+.glow-box { 
+	width: 960px;
+	height: 380px;
+	margin: auto;
+	position: relative; /*Nodig om de knop(glow-btn) bovenop te tonen*/
+}
+
+.glow-btn {	/*knop een oranje tint die bovenop de artikelen moet komen*/
+	position: absolute;
+	z-index: 21;
+	background-color: #F4AB00;
+	color: white;
+	top: 152px;
+	left: 412px;
+	border-radius: 50%;
+	padding: 20px 28px;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.glow-btn:hover{ 
+	color: #F4AB00;
+	background-color: white;
+	border: solid 4px #F4AB00;
+	padding: 16px 24px;
+}
+
+.gb-p {	/*Project knop is breeder dus moest aparte class hebben*/
+	padding: 20px 17px;
+}
+
+.gb-p:hover{
+	padding: 16px 13px;
+}
+
+.glow-btn-fade {
+	height: 85px;
+	width: 150px;
+	background-color: #F4AB00;
+	z-index: 20;
+	position: absolute;
+	top: 140px;
+	left: 400px;
+	border-radius: 50%;
+	opacity: .50;
+}
+
+.slogan-box {
+	display: inline-block;
+	width: 960px;
+	text-align: center;
+	font-style: italic;
+	color: #00C0FF;
+}
+
+.art-box > .art-titel {/*alle titels hebben zelfde size*/
+	font-size: 24px;
+}
+
+.art-box > .art-text-l { /*moet links staan*/
+	font-size: 14px;
+	width: 300px;
+	height: 25px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	right:0;
+	transition: 0.1s;
+}
+
+.art-box > .art-text-r { /*moet rechts staan*/
+	font-size: 14px;
+	width: 300px;
+	height: 25px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 0;
+	transition: 0.1s;
+}
+
+.art-box:hover > .art-text { /*moet langer worden zodat de hele text zichtbaar is*/
+	height: 100px;
+}
+
+ .art-box:hover .pr-titel { /*titel moet vergroot worden bij hover*/
+ 	font-size: 1.2em;
+ }
+
+.art-box > .pr-titel {
+	width: 475px;
+	height: 185px;
+	text-align: center;
+	line-height: 175px;
+}
+
+.glow-box-pr .pr-box {
+	font-size: 32px;
+}
+
+.glow-box-pr .pr-box:hover {
+	width: 475px;
+	height: 185px;
+	text-align: center;
+	line-height: 175px;
+}
+
+.even-container h2 {
+	font-size: 24px;
+	display: inline-block;
+	margin-left: 22px;
+}
+
+.even-slide {
+	border: solid 3px #00007D;
+	width: 960px;
+	height: 210px;
+	margin:auto;
+}
+
+.even-slide span {
+	display: inline-block;
+	margin: 10px;	
+}
+
+.even-box {
+	width: 220px;
+	height: 125px;
+	background-color: grey;
+	margin: 15px 25px;
+	float: left;
+	background-position: center top;
+	background-size: cover;
+	padding: 0px 10px;
+	position: relative;
+	transition: .25s;
+}
+
+#even-1 {
+	background-image:url(../img/articles/jeugdhulp.jpg); /*elk event heeft eigen achtergrond*/
+}
+
+#even-2 {
+	background-image:url(../img/articles/men-at-work.jpg);
+}
+
+.even-last { /*moet clickable zijn maar hiermee lijkt het tenminste zo*/
+	clear: right;
+	cursor: pointer;
+}
+
+.even-first {
+	clear: left;
+	font-weight: bold;
+}
+
+.nb-container-index {
+	color: #00C0FF;
+	border: solid 3px #00C0FF;
+	width: 960px;
+	height: 205px;
+	margin: 25px auto;
+}
+
+.nb-box {
+	float: left;
+	width: 400px;
+	margin-top: 5px;
+}
+
+.nb-box h5 {
+	font-size: 14px;
+	font-weight: normal;
+}
+
+.nb-dim h3 {
+	font-size: 24px;
+	margin-top: 5px;
+}
+
+.inlog-box {
+	float: left;
+}
+
+.nb-dim {
+	height: 195px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-right: solid 1px #00c0ff;
+}
+
+.inl-input {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 250px;
+}
+
+.nb-input {
+	width: 290px;
+}
+
+.inlog-box {
+	width: 260px;
+	border: none;
+}
+
+.reg-box { 
+	color:white;
+	width: 160px;
+	background-color: #00c0ff;
+	text-align: center;
+	height: 205px;
+	float: right;
+}
+
+.reg-box h3 {
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+#reg-btn {
+	color:white;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #F4AB00;
+	border-radius: 10px;
+	padding:10px;
+	margin-top: 25px;
+	display: inline-block;
+}
+
+#reg-btn:hover{
+	color: #F4AB00;
+	background-color: white;
+	padding: 8px;
+	border: #F4AB00 solid 2px;
+}
+
+.inl-btn{
+	float: right;	
+	margin:10px;
+	display: inline-block;
+}
+
+.nb-home-btn {
+	margin-left: 5px;
+}
+
+.nb-home-btn:hover {
+	padding-bottom: 5px;
+
+}

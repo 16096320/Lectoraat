@@ -1,0 +1,75 @@
+.art-box {	/*Opmaak voor de artikelbox*/
+	height: 210px;
+	width: 205px;
+	background-color: #202020;
+	padding: 80px 10px 10px 10px;
+	position: relative;
+	color: white;
+	float: left;
+	display: inline-block;
+	margin: 10px 15px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	text-align: center;
+}
+
+#art1 {
+	background-image: url("../img/articles/part1.jpg"); /*Elke artikel heeft eigen achtergrond image*/
+}
+
+#art2 {
+	background-image: url("../img/articles/part2.jpg");
+}
+
+#art3 {
+	background-image: url("../img/articles/part3.jpg");
+}
+
+.art-box:hover:after {	/*Zorgt voor hover effect dat afbeelding zichtbaarder maakt*/
+	cursor: pointer;
+	opacity: .25;
+}
+
+.art-titel, .art-pv, .lm-btn { /*Brengt text boven de schaduw*/
+	z-index: 1;
+	position: relative;
+}
+
+.art-titel { /*soepele vergroting van de titel*/
+	transition: .2s;
+}
+
+.art-container { /*centreert alle artikelen*/
+	width: 825px;
+	margin:auto;
+}
+
+.art-box:hover h2 { /*vergroot de text in de box*/
+	font-size: 1.9em;
+}
+
+.pagination {
+	clear: both;
+	width: 150px;
+	margin:  10px auto;
+	padding: 20px;
+	text-align: center;
+}
+
+.pagination > a {
+	text-decoration: none;
+	margin-right:10px;
+	color: #00007D;
+}
+
+.pagination > a:hover {
+	color: #F4AB00;
+}
+
+.pagination > #pagi-active {
+	color: #F4AB00;
+	font-weight: bold;
+	cursor: default;
+}
+

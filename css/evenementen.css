@@ -1,0 +1,42 @@
+.even-selector {
+	margin: 20px 30px;
+	font-size: 22px;
+}
+
+.selected {
+	font-weight: bold;
+}
+
+.even-head {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.even-container {
+	width: 855px;
+	height: 500px;
+	margin:auto;
+}
+
+.even-box {
+	width: 265px;
+	margin:0px 30px 30px 0px;
+	height: 150px;
+	background-color: blue;
+	float: left;
+	color: white;
+	background-size: cover;
+	position: relative;
+}
+
+#even-1 {
+	background-image:url(../img/articles/jeugdhulp.jpg);
+}
+
+#even-2 {
+	background-image:url(../img/articles/men-at-work.jpg);
+}
+
+.even-last {
+	margin-right: 0px;
+}

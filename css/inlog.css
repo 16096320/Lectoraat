@@ -1,0 +1,53 @@
+.utility > #inlog-link {
+	color: #F4AB00;
+}
+
+.inp-field {
+	border: none;
+	border-bottom: solid 1px #00007d;
+	padding: 5px;
+	width: 350px;
+	margin: 25px 0px;
+}
+
+.inlog-box {
+	float: left;
+	width: 450px;
+	height: 350px;
+	padding-left:50px; 
+}
+
+.pag-titel {
+	font-size: 24px;
+}
+
+.reg-box {
+	float: left;
+	padding-left: 50px;
+	width: 400px;
+	border-left: solid 2px #00007d;
+	height: 350px;
+}
+
+.av-btn {
+	float: right;
+	font-weight: bold;
+}
+
+.av-btn-reg {
+	margin-right: 40px;
+}
+
+.av-btn-inl {
+	margin-right: 90px;
+}
+
+.ww-vergeten {
+	font-size: 12px;
+	color: #00C0FF;
+	float: left;
+}
+
+.foot-note {
+
+}

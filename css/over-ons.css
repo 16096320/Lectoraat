@@ -1,0 +1,69 @@
+
+.text-box {
+	margin-left: 20px;
+	width: 635px;	
+	float: left;
+}
+
+.paragraaf-text {
+	font-size: 14px;
+}
+
+.pl-vierkant {
+	height: 75px;
+}
+
+.pl-breed{
+	margin-top: 25px;
+	width: 120px;
+}
+
+.partner-logo {
+	margin-bottom: 10px;
+}
+
+.logo-container {
+	width: 120px;
+	float: left;
+	text-align: center;
+	margin: 0px 135px 0px 0px;
+}
+
+.logo-text {
+	font-size: 14px;
+	display: inline-block;
+	width:120px;
+}
+
+.kw-box {
+	color: white;
+	height: 180px;
+	width: 180px;
+	background-color: #00007d;
+	padding: 10px;
+	margin-bottom: 100px;
+	display: inline-block;
+	text-align: center;
+	margin-left: 95px;
+}
+
+.kw-titel {
+	font-size: 18px;
+}
+
+.kw-box > p {
+	font-size: 15px;
+}
+
+.text-breed {
+	margin-top: 10px;
+}
+
+.pl-first-row , .pl-second-row {
+	height: 120px;
+	margin-bottom: 30px;
+}
+
+.last-logo {
+	margin-right: 0px;
+}

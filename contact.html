@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8"/>
+			<link href="css/algemeen.css" type="text/css" rel="stylesheet">
+			<link href="css/contact.css" type="text/css" rel="stylesheet">
+		</head>
+		<body>
+			<div class="container">
+				<header>
+					<nav class="utility"><a href="inlog.html" id="inlog-link">Inloggen/Registreren</a></nav>
+					<a href="index.html">
+						<figure>
+							<img src="img/LogoCoE.png" alt="Logo Centre of Expertise" id="header-logo"/>
+						</figure>
+					</a>
+					<nav>
+						<ul id="navbar">
+							<li><a href="nieuws.html">Nieuws</a></li>
+							<li><a href="projecten.html">Projecten</a></li>
+							<li><a href="evenementen.html">Evenementen</a></li>
+							<li><a href="over-ons.html">Over Ons</a></li>
+							<li><a href="contact.html" id="active-menu">Contact</a></li>
+						</ul>
+						<img src="img/icons/search-icon.png" alt="search icon" id="search-icon"/>
+					</nav>
+				</header>
+				<main>
+					<h1 class="page-titel">Contact</h1>
+					<div class="contact-box"> <!--bevat formulier-->
+						<p class="contact-txt">Op deze pagina kunt u door middel van het onderstaande formulier contact opnemen met ons voor eventuele vragen of feedback. Wij zullen proberen om zo snel mogelijk te reageren.
+						</p>
+						<form method="post" action="#" class="contact-form"> <!--formulier om contact op te nemen-->
+							<input type="text" name="naamveld" class="input-field input-design" placeholder="Naam" required=""/>
+							<input type="email" name="emailveld" class="input-field input-design" placeholder="E-mail" required=""/>
+							<select class="afdeling-dp input-design">
+								<option class="dp-ph">Kies de afdeling</option>
+								<option>Business, Finance & Marketing</option>
+							</select>
+							<label for="opmerking">Vraag/Opmerking</label>
+							<textarea rows="10" cols="30" id="opmerking" class="input-design" required=""></textarea>
+							<input type="submit" name="verzend-knop" value="Verzenden" class="av-btn vz-btn"/>
+						</form>
+					</div>
+					<div class="adres-box"> <!--bevat adres gegevens-->
+						<h3 class="sub-kop">Adres</h3>
+						<p class="adres-gegevens">
+							De Haagse Hogeschool<br/>
+							<br/>
+							Johanna Westerdijkplein 75<br/>
+							<br/>
+							2521EN Den Haag
+						</p>
+					</div>
+					<div class="lcs-box"> <!--bevat knop met livechat mogelijkheid-->
+						<h3 class="sub-kop">Live Chat Support</h3>
+						<a href="#" class="lc-btn">Live Chat</a>
+					</div>
+				</main>
+				<footer>
+					<section class="nb-container">
+						<div class="invul-box">
+							<h3>Nieuwsbrief</h3>
+							<form method="post" action="#">
+								<input type="email" name="nb-input" class="nb-input-mail nb-input" placeholder="E-mail" required=""/>
+								<input type="submit" name="aanvragen" value="Aanvragen" class="av-btn nb-home-btn"/>
+							</form>
+						</div>
+						<div class="nb-info-box">
+							<h5>Extra informatie</h5>
+							<p class="nb-info">U ontvangt de nieuwsbrief wekelijks op elke woensdag in de ochtend.
+							Bij het aanmaken van een account kunt u deze instellingen wijzigen naar uw voorkeur.</p>
+						</div>
+					</section>
+					<div class="footer-box">
+						<section class="foot-sect">
+							<h3 class="foot-title">Links</h3>
+							<ul class="foot-links">
+								<li>Docenten</li>
+								<li>Kenniskring</li>
+								<li>Studenten</li>
+							</ul>
+						</section>
+						<section class="foot-sect">	
+							<h3 class="foot-title">Contact</h3>
+							<p>Johanna Westerdijkplein 75</br>
+							2521EN Den Haag</br>
+							</br>
+							070 - 233 45 67</br>
+							</br>
+							info@hhs.nl
+							</p>
+						</section>
+						<section class="foot-sect">
+							<h3 class="foot-title">Pagina's</h3>
+							<ul class="foot-links">
+								<li>Nieuws</li>
+								<li>Projecten</li>
+								<li>Evenementen</li>
+								<li>Over Ons</li>
+								<li>Contact</li>
+							</ul>
+						</section>
+						<section class="foot-sect foot-sect-last">
+							<h3 class="foot-title">Social</h3>
+							<ul class="foot-links social-ul">
+								<li id="fb">Facebook</li>
+								<li id="lin">LinkedIn</li>
+								<li id="tw">Twitter</li>
+							</ul>
+						</section>
+						<label class="foot-note">Powered By De Haagse Hogeschool</label>
+					</div>
+				</footer>
+			</div>
+		</body>
+	</html>
+

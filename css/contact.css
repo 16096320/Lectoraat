@@ -1,0 +1,90 @@
+.contact-txt{
+	font-style: italic;
+	font-size: 14px;	
+}
+
+.contact-box {
+	width: 550px;
+	border-right: solid 2px #00007d;
+	margin-left: 20px;
+	padding: 10px 50px 10px 0px;
+	margin-bottom: 30px;
+	float: left;
+	margin-right: 40px;
+}
+
+.input-design {
+	font-size: 14px;
+	height: 25px;
+	width: 540px;
+	margin-bottom: 30px;
+	padding: 0px 5px;
+} 
+
+.input-field {
+	border: none;
+	border-bottom: solid #00007d 1px;
+}
+
+.afdeling-dp {
+	width: 550px;
+	border: solid 1px #00007d;
+}
+
+.dp-ph {
+	font-style: italic;
+}
+
+#opmerking {
+	width: 538px;
+	margin-top: 10px;
+	display: inline-block;
+	border: solid 1px #00007d;
+	height: 165px;
+}
+
+.vz-btn {
+	float: right;
+	display: inline-block;
+}
+
+.contact-form {
+	overflow: auto;
+}
+
+.adres-box {
+	float:left;
+	width: 300px;
+	border-bottom: solid #00007d 2px;
+	padding: 10px 10px 50px;
+}
+
+.sub-kop {
+	margin:0px;
+}
+
+.lcs-box {
+	display: inline-block;
+	text-align: center;
+	width: 300px;
+	padding:20px 10px;
+}
+
+.lc-btn {
+	padding: 10px 27px;
+	border-radius: 10px;
+	background-color: #F4AB00;
+	margin-top: 145px;
+	display: inline-block;
+	font-size: 14px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.lc-btn:hover {
+	padding: 8px 25px;
+	border: solid 2px #F4AB00;
+	background-color: white;
+	color: #F4AB00;
+}

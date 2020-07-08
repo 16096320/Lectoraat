@@ -1,0 +1,75 @@
+
+.art-container {
+	width: 825px;
+	margin:auto;
+}
+
+.art-box {
+	height: 290px;
+	width: 205px;
+	background-color: #202020;
+	padding: 10px;
+	position: relative;
+	color: white;
+	float: left;
+	display: inline-block;
+	margin: 10px 15px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.art-titel, .art-pv, .lm-btn {
+	z-index: 1;
+	position: relative;
+}
+
+.art-box:hover:after {
+	cursor: pointer;
+	opacity: .25;
+}
+
+.art-titel {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.art-pv {
+	font-size: 14px;
+	width: 175px;
+	height: 25px;
+	position: absolute;
+	overflow: hidden;
+	bottom: 0;
+	margin-bottom: 35px;
+	transition: .1s;
+}
+
+.art-box:hover .art-pv{
+	height: 100px;
+}
+
+#art1 {
+	background-image: url("../img/articles/nart1.jpg");
+}
+
+#art2 {
+	background-image: url("../img/articles/nart2.jpg");
+}
+
+#art3 {
+	background-image: url("../img/articles/nart3.png");
+}
+
+.lm-btn {
+	color: #F4AB00;
+	text-decoration: none;
+	position: absolute;
+	right:0;
+	bottom:0;
+	margin:10px;
+}
+
+.lm-btn:hover {
+	text-decoration: underline;
+}

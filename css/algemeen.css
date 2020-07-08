@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i'); /*webfont*/
+
+/*Dit css bestand is voor elementen die op elke pagina terugkomen zodat er geen dubbele code geschreven moet worden*/
+
+body {
+	font-family: Ubuntu, Helvetica; /*Font is op alle pagina's hetzelfde*/
+	color: #00007D;	/*Bijna alle tekst op de site heeft deze kleur*/
+}
+
+.container {
+	width:1000px;	/*breedte van alle pagina's*/
+	margin: auto;	/*centreren van de pagina*/
+}
+
+header {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: right;
+    border-bottom: solid 2px #00007D; /*Streep onder het menu afscheiding van header en pagina*/
+    padding: 15px 20px 20px;
+}
+
+#header-logo {
+	width:325px;
+	float:left;	/*andere elementen moeten ernaast getoond worden*/
+	margin-top: -20px; /* margins moesten ervoor zorgen dat het logo op de positie komt net als hoe het op axure is getoond*/
+	margin-left: -40px;
+}
+
+#header-logo:hover {
+	cursor: pointer;	/*Zodat het te zien is dat de logo een escape hatch is.*/
+}
+
+.utility {
+	margin-top: -50px; /*zodat het inlog/registreer-button bovenaan de pagina blijft en rechts blijft*/
+	float: right;	
+}
+
+#inlog-link {
+	font-weight: bold; 
+	font-size: 18px;
+}
+
+#navbar > li {
+	display:inline;
+	margin-right: 10px;
+	font-size:18px;
+}
+
+#navbar > li > a {
+	color:#00007D;
+	text-decoration: none;
+}
+
+#navbar > li > a:hover, #inlog-link:hover {
+	cursor: pointer;	/*toont dat het clickable is dmv kleur en pointer*/
+	color: #F4AB00;
+}
+
+#search-icon {
+	width: 28px;
+}
+
+#search-icon:hover {
+	cursor: pointer;
+}
+
+#navbar {
+	display:inline;
+	margin-top:20px;
+}
+
+#navbar > li > #active-menu { /*Zodat men kan zien welke selecteerd is*/
+	color: #F4AB00;
+	font-weight: bold;
+}
+
+.page-titel {
+	font-size: 32px;
+	font-weight: bold; /*Op elke pagina is de titel zo*/
+	margin-left: 20px;
+}
+
+.art-box:after , .even-box:after {	/*donkere effect op de artikelen*/
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #000;
+	opacity: .75; /*het zwarte vlak word doorzichtig*/
+	z-index: 0;
+	transition: .25s;	/*zorgt voor een smooth effect*/
+}
+
+.art-box .art-titel, .art-box .art-text, .even-txt {
+	color: white;
+	z-index: 1;
+	position: relative;
+	margin: 10px;
+}
+
+.art-box:hover > .art-text {
+	height: 100px;	/*zorgt ervoor dat het text veld zich vergroot en het textvak op artikelbox*/
+}
+
+.art-box {
+	overflow: hidden;	
+}
+
+.pagination {
+	clear: both;
+	width: 150px;
+	margin: 10px auto;	/*centreert de list en creeert ruimte boven en beneden*/
+	padding: 20px;	
+	text-align: center;	/*centreert de cijfers die in de lijst zitten*/
+}
+
+.pagination > a {
+	text-decoration: none;
+	margin-right: 10px; /*ruimte tussen de items*/
+}
+
+.pagination a:hover {
+	color: #F4AB00;
+}
+
+.pagi-active {		/*toont op welke pagina men zich bevindt*/
+	color: #F4AB00; 
+	font-weight: bold;
+	cursor: default;
+}
+
+.invul-box {
+	width: 675px;
+	float: left;
+	display: inline-block;
+}
+
+.nb-input-mail {
+	border: none;
+	border-bottom: solid 1px #00c0ff;
+	width: 525px;
+	padding: 5px;
+}
+
+.av-btn {	/*de meeste buttons op de site hbben dezelfde opmaak*/
+	color: #F4AB00;
+	text-decoration: none;
+	margin-left: 10px;
+	font-size: 16px;
+	border:none;
+	background-color: white;
+	font-family: Ubuntu;
+	padding-bottom: 4px;
+}
+
+.av-btn:hover { /*de buttons hebben een hover*/
+	border-bottom: 2px solid #F4AB00;
+	padding-bottom: 2px; 
+	cursor: pointer;
+}
+
+.nb-container { /*nieuwsbrief heeft een dikke border en de opmaak is op elke pagina het zelfde behalve home.*/
+	color: #00C0FF;
+	border: solid 2px #00C0FF;
+	display: inline-block;
+	height: 125px;
+	width: 944px;
+	padding: 10px 25px;
+}
+
+.nb-container > h3 {	
+	margin-top: 0px;
+	font-size: 24px;
+}
+
+.nb-info-box {
+	float: left;	
+	width: 220px;
+	padding: 0px 20px;
+	border-left: solid 2px #00C0FF; /*maakt streep tussen invulveld en info veld*/
+}
+
+.nb-info-box > h5 {
+	font: 14px;
+	font-weight: normal;
+	margin-top: 10px;
+}
+
+.nb-info {
+	font-size: 13px;
+	margin-top:-10px;
+}
+
+.footer-box {	/*footer heeft de dezelfde achtergrond en is even breed en hoog op elke pagina de padding moet van de breedte afgetrokken worden zodat het niet meer dan 1000px word*/
+	color: white;
+	background-color: #00007D;
+	width: 900px;
+	height: 300px;
+	padding: 25px 50px;
+	display: inline-block;
+	margin-top: 20px;
+	position: relative;
+}
+
+.foot-sect { /*Dit laat de section naast elkaar staan en met gelijke afstand*/
+	float: left;
+	margin-right: 135px;
+}
+
+.foot-links { /*De laatste section moet tegen de rand aan zitten*/
+	padding-left: 0px;
+}
+
+.foot-links > li{	/*opmaak van de lists weggehaald en ruimte tussen de li's*/
+	list-style: none;
+	margin-bottom: 20px;
+}
+
+.foot-sect-last {
+	margin-right: 0px;
+}
+
+.foot-title { /*titels onderstreept en groter dan de links*/
+	margin-top: 0px;
+	font-size: 25px;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.foot-note {	/*moet aan de onderkant van de footer vastzitten*/
+	position: absolute;
+	bottom: 25px;
+	right: 50px;
+	opacity: .5;
+}
